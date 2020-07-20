@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>My Form</title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		
+			<div class="form-container mt-5">
+			<form id="form">
+				<div class="container">
+					<h2>Enter Your Info</h2>
+					<hr>
+					<label for="username" class="form-label">Username </label>
+					<input class="form-control " type="text" name="username" id="username" placeholder="Enter username" />
+					<small id="username-small">error input</small>
+				</div>
+				<div class="container">
+					<label class="form-label" for="email">E-mail </label>
+					<input class="form-control" type="text" name="email" id="email" placeholder="Enter e-mail" />
+					<small  id="email-small">error input</small>
+				</div>
+				<div class="container">
+					<label class="form-label" for="password">Password </label>
+					<input class="form-control" type="password" name="password" id="password" placeholder="Enter password" />
+					<small id="password-small" >error input</small>
+				</div>
+				<div class="container">
+					<label class="form-label" for="password2">Confirm Password </label>
+					<input class="form-control" type="password" name="password2" id="password2" placeholder="Confirm password" />
+					<small id="password2-small" >error input</small>
+                </div>
+                <div class="container mt-5">
+                    <button id="btn" type="submit">Submit</button>
+                </div>
+            </div>
+			</form>
+			<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
+		<script src="app.js"></script>
+	</body>
+</html>

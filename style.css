@@ -1,0 +1,105 @@
+/* Global */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Helvetica, sans-serif;
+    background: rgb(228, 227, 227);
+    color: rgb(245, 233, 233);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+hr {
+    width: 50%;
+    margin: auto;
+}
+
+/* FORM */
+
+.form-container {
+    display: flex !important;
+    justify-content: center !important;
+    width: 80%;
+    margin: auto;
+    position: relative;
+}
+
+form {
+    background: rgb(255, 254, 254);
+    color: rgb(20, 20, 20);
+    padding: 2rem;
+    height: 90vh !important;
+    border-radius: 6px;
+    max-width: 80%;
+    width: 70%;
+    box-shadow: 2px 2px 10px black;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 0;
+    z-index: 2;
+}
+button {
+    width: 70%;
+    margin: auto;
+    padding: 1%;
+    border-radius: 10px;
+    border: 1.5px solid black;
+    font-size: 1.3rem;
+    background-color: rgb(124, 212, 212);
+}
+
+button:hover {
+    color: white;
+    background-color: rgb(28, 11, 49);
+    border: 1px solid #e6e5e5;
+    cursor: pointer;
+}
+button:focus {
+    outline: none;
+}
+
+input {
+    font-size: 1.5rem !important;
+}
+
+input:focus {
+    border-color: blueviolet !important;
+    outline-color: blueviolet !important;
+}
+
+#username {
+    text-transform: capitalize;
+}
+
+label {
+    font-size: 1.3rem;
+}
+
+small {
+    visibility: hidden;
+    color: red;
+    font-size: 1rem;
+}
+@media screen and (max-width: 800px) {
+    .form-container {
+        width: 100% !important;
+    }
+    .form {
+        width: 100% !important;
+    }
+}
